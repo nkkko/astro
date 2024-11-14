@@ -99,10 +99,10 @@ importers:
     devDependencies:
       '@codspeed/tinybench-plugin':
         specifier: ^3.1.1
-        version: 3.1.1(tinybench@2.9.0)
+        version: 3.1.1(tinybench@3.0.6)
       tinybench:
-        specifier: ^2.9.0
-        version: 2.9.0
+        specifier: ^3.0.6
+        version: 3.0.6
 
   benchmark/packages/adapter:
     dependencies:
@@ -8764,6 +8764,7 @@ packages:
 
   libsql@0.4.5:
     resolution: {integrity: sha512-sorTJV6PNt94Wap27Sai5gtVLIea4Otb2LUiAUyr3p6BPOScGMKGt5F1b5X/XgkNtcsDKeX5qfeBDj+PdShclQ==}
+    cpu: [x64, arm64, wasm32]
     os: [darwin, linux, win32]
 
   lilconfig@2.1.0:
@@ -10344,6 +10345,10 @@ packages:
   tinybench@2.9.0:
     resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
 
+  tinybench@3.0.6:
+    resolution: {integrity: sha512-ljQ0LM7ePiVrjM8KHkHUWH+eVo36hwpE34dqYvOJIvzVJvzqXwTpjjw/bLjduqU50Z8CuhVFgFN1U7yLaSCsCg==}
+    engines: {node: '>=18.0.0'}
+
   tinyexec@0.3.1:
     resolution: {integrity: sha512-WiCJLEECkO18gwqIp6+hJg0//p23HXp4S+gGtAKu3mI2F2/sXC4FvHvXvB0zJVVaTPhx1/tOwdbRsa1sOBIKqQ==}
 
@@ -11586,11 +11591,11 @@ snapshots:
     transitivePeerDependencies:
       - debug
 
-  '@codspeed/tinybench-plugin@3.1.1(tinybench@2.9.0)':
+  '@codspeed/tinybench-plugin@3.1.1(tinybench@3.0.6)':
     dependencies:
       '@codspeed/core': 3.1.1
       stack-trace: 1.0.0-pre2
-      tinybench: 2.9.0
+      tinybench: 3.0.6
     transitivePeerDependencies:
       - debug
 
@@ -16525,6 +16530,8 @@ snapshots:
   timestring@6.0.0: {}
 
   tinybench@2.9.0: {}
+
+  tinybench@3.0.6: {}
 
   tinyexec@0.3.1: {}
 
